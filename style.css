@@ -55,7 +55,7 @@ button:focus{
 /* Styling The Questions and Their options */
 
 #questionContainer{
-    margin-top: 10rem;
+    margin-top: 5rem;
     padding: 3rem;
     border-radius: 20px;
     align-self: flex-start;
