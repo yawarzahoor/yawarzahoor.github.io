@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="parent">
+    <div id="introductionDiv">
+        <h2>Hi this is a Beginner Level Web-Developement (HTML + CSS + Javascript) Quiz.</h2>
+        <h2>Here are some rules:</h2>
+        <ul>
+            <li>In this quiz, you will have 15 Multiple Choice Questions.</li>
+            <li>A correctly answered question will fetch you 2 points.</li>
+            <li>For every incorrect answer 0.25 points will be deducted from your score.</li>
+            <li>So you can score a mimimum of -3.75 points to a maximum of 30 points.</li>
+            <li>You can feel free to skip a question if you are not sure about it.</li>
+            <li>If you are up for a challenge, click the Start button. Make sure you don't end up in the negative zone.
+            </li>
+        </ul>
+        <button onclick="strt()">Start the Quiz</button>
+        <p>*Feel free to remix the code as you wish. If you want to create your own quiz, just open the javascript file,
+            head to the "questionBank array" at the top and add as many questions as you wish. The code will itself take
+            care of the rest.</p>
+    </div>
+    <div id="questionContainer">
+        <p id="question">This is question</p>
+
+    </div>
+    <div id="optionsDiv">
+        <div class="optionContainer"><input type="radio" id="radoption1" name="options"><label for="radoption1"
+                id="option1">Option1</label></div>
+        <div class="optionContainer"><input type="radio" id="radoption2" name="options"><label for="radoption2"
+                id="option2">Option1</label></div>
+        <div class="optionContainer"><input type="radio" id="radoption3" name="options"><label for="radoption3"
+                id="option3">Option1</label></div>
+        <div class="optionContainer"><input type="radio" id="radoption4" name="options"><label for="radoption4"
+                id="option4">Option1</label></div>
+    </div>
+    <p id="alertPara"></p>
+    <div id="answerButtons">
+        <button id="next" onclick="next()">Submit Answer</button>
+        <button onclick="skipp()">Skip this Question</button>
+    </div>
+    <div id="finishMsg">
+        <h2>Test Finished</h2>
+        <p>Click below to get your report card.</p>
+        <button onclick="calculateResult()">Get Report card</button>
+    </div>
+    <div id="reportContainer">
+        <table>
+            <h2 id="reportTitle">Your Report Card</h2>
+            <h1 id="finalResult"></h1>
+            <p id="reportMsg"></p>
+            <tr>
+                <th colspan="2" id="tableTitle">Detailed Report</th>
+            </tr>
+            <tr>
+                <th>Total No. of Questions</th>
+                <td id="NoOfQ"></td>
+            </tr>
+            <tr>
+                <th>No. of questions attempted</th>
+                <td id="attempted"></td>
+            </tr>
+            <tr>
+                <th>No. of questions answered correctly</th>
+                <td id="correct"></td>
+            </tr>
+            <tr>
+                <th>No. of questions answered incorrectly</th>
+                <td id="incorrect"></td>
+            </tr>
+            <tr>
+                <th>Points obtained from correct answers </th>
+                <td id="positiveMarks"></td>
+            </tr>
+            <tr>
+                <th>Points deducted from incorrect answers </th>
+                <td id="negativeMarks"></td>
+            </tr>
+            <tr>
+                <th>Final Points</th>
+                <td id="finalMarks"></td>
+            </tr>
+        </table>
+        <p>Didn't score that well? You can try again. <br> If you have any doubt, you can view your response sheet and
+            the correct key.</p>
+        <div id="reportButtons">
+            <button onclick="location.href='index.html'">Try Again</button>
+            <button onclick="getResponseSheet()">Show my Response Sheet</button>
+        </div>
+    </div>
+    <div id="responseSheet">
+        <button onclick="location.href='index.html'">Back to Homepage</button>
+        <h1>Your Response Sheet</h1>
+    </div>
+    <script src="coder.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+html{
+    font-size: 2vw;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+/* Styling the introduction page */
+
+#introductionDiv{
+    text-align: center;
+}
+#introductionDiv ul{
+    padding: 2rem;
+    margin: 0;
+}
+#introductionDiv li{
+    text-align: left;
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+#introductionDiv h2{
+    color: green;
+    font-size: 3rem;
+}
+#introductionDiv p{
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem;
+}
+
+/* Common Styling for all the buttons */
+
+button{
+    margin: 1rem;
+    padding:  1.5rem;
+    font-size: 2rem;
+    background-color: rgb(87, 85, 85);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(124, 120, 120);
+}
+button:focus{
+    outline: transparent;
+}
+
+/* Styling The Questions and Their options */
+
+#questionContainer{
+    margin-top: 10rem;
+    padding: 3rem;
+    border-radius: 20px;
+    align-self: flex-start;
+}
+#question{
+    font-size: 3.3rem;
+    color: rgb(13, 87, 13);
+    font-weight: bold;
+}
+#optionsDiv{
+    align-self: flex-start;
+}
+.optionContainer{
+    padding: 2rem;
+    border-radius: 7px;
+    display: flex;
+}
+.optionContainer:hover{
+    background-color: #6fe9296c;
+}
+.optionContainer label{
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+.optionContainer input{
+    height: 2.5rem;
+    width: 3rem;
+}
+
+/* Styling the next and skip buttons */
+#answerButtons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#alertPara{
+    text-align: center;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* Styling the Test-Finished Page */
+
+#finishMsg{
+    text-align: center;
+    margin: 25rem auto;
+}
+
+#finishMsg h2{
+    color: green;
+    font-size: 3rem;
+}
+
+#finishMsg p{
+    font-size: 2.5rem;
+}
+
+/* Styling the report page */
+
+#reportContainer p{
+    font-size: 2rem;
+}
+#reportContainer{
+    text-align: center;
+}
+
+/* Styling the report Table */
+
+#reportContainer table{
+    border-collapse: collapse;
+    border: 2px solid #35e35742;
+    font-size: 2rem;
+    margin: auto;
+}
+#reportContainer th,#reportContainer td{
+    border: 2px solid #35e35865;
+    text-align: left;
+    padding: 2rem 2.5rem;
+}
+
+#reportContainer tr:nth-child(even){
+    background-color: #35e35742;
+}
+#reportTitle{
+    font-size: 3rem;
+    color: green;
+}
+#finalResult{
+    font-size: 3rem;
+}
+#tableTitle{
+    text-align: center !important;
+    color: rebeccapurple;
+}
+
+/* Styling the Response Sheet */
+
+#responseSheet div{
+    margin: 3rem;
+    font-size: 2rem;
+}
+#responseSheet h1{
+    text-align: center;
+    font-size: 3rem;
+}
+#responseSheet button{
+    display: block;
+    width: fit-content;
+    margin: auto
+}
+
+
+/* Defining Media Query For Devices of Larger Width */
+
+@media(min-width:600px){
+    html{
+        font-size: 0.7vw;
+    }
+    #questionContainer{
+        margin-top: 5rem;
+        padding: 1rem;
+        margin-left: 2rem;
+    }
+    #optionsDiv{
+        margin-left: 2rem;
+    }
+    #finishMsg{
+        margin: 20rem auto;
+    }
+    #reportContainer{
+        margin-top: 0;
+    }
+}
